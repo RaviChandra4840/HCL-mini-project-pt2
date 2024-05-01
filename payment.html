@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Payment Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        .paytm-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .paytm-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .paytm-form input[type="text"],
+        .paytm-form input[type="number"],
+        .paytm-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .paytm-form button {
+            padding: 10px 20px;
+            background-color: #f38630;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="paytm-form">
+        <h2>Payment System</h2>
+
+        <form action="/your-backend-endpoint" method="POST">
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="text" id="mobile-number" name="mobile_number" required>
+
+            <label for="amount">Amount (₹):</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment_method">
+                <option value="wallet">Paytm Wallet</option>
+                <option value="upi">UPI</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+            </select>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+
