@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient">
+<div class="wi"> </div>
+    <div class="form-container">
+        <h1>Enter Details</h1>
+        <form id="detailsForm"  action="process_details.php">
+            <input type="text" name="username" placeholder="Username"><br>
+            <input type="text" name="adharnumber" placeholder="Aadhar Number"><br>
+            <input type="text" name="name" placeholder="Name"><br>
+            <select name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <input type="text" name="country" placeholder="Country"><br>
+            <textarea name="address" placeholder="Address"></textarea><br>
+            <input type="tel" name="phone" placeholder="Phone"><br>
+            <input type="email" name="email" placeholder="Email"><br>
+            <button type="button" onclick="saveDetails()">Submit</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+

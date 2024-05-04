@@ -1,0 +1,91 @@
+body{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #FFC796, #FF6B95, #4CA1A3);
+    background-size: 600% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.hotel {
+    position: relative;
+    display: flex;
+    margin: 15px 0;
+}
+
+.hotel img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.hotel-details h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.rating {
+    color: gold;
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ... previous styles ... */
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+   
+}
+/* ... Include previous styles ... */
+
+.booking-details {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+.shiva{
+    color: #007BFF;
+}
